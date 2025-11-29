@@ -1,7 +1,11 @@
-{
-  "name": "calvaz-prime-concepts",
+{"name": "calvaz-prime-concepts",
   "version": "1.0.0",
-  "description": "debt recovery consultancy",
+  "engines": {
+    "node": "22.x",
+    "npm": "10.x",
+     "description": "debt recovery consultancy"
+  },
+ 
   "keywords": [
     "non",
     "performing",
