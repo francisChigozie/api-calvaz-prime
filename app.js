@@ -97,7 +97,7 @@ function createApp() {
     // CORS – adjust origins to your domains
     app.use(
         cors({
-            origin: ['http://localhost:5173', 'https://calvaz-prime.onrender.com'],
+            origin: 'https://calvaz-prime.onrender.com',
             credentials: true,
             optionsSuccessStatus: 204,
         })
@@ -109,7 +109,7 @@ function createApp() {
     }
 
     // Serve static assets (Vite/React build assumed at npl-app/dist)
-    const staticDir = path.join(__dirname, 'npl-app', 'dist');
+   /*  const staticDir = path.join(__dirname, 'npl-app', 'dist');
     app.use(
         express.static(staticDir, {
             index: false,
@@ -121,7 +121,7 @@ function createApp() {
                 }
             },
         })
-    );
+    ); */
 
     // Body and cookie parsing
     app.use(bodyParser.json({ limit: '50mb' }));
