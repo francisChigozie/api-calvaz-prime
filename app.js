@@ -97,7 +97,7 @@ function createApp() {
     // CORS – adjust origins to your domains
     app.use(
         cors({
-            origin: 'https://calvaz-prime.onrender.com',
+            origin: ['http://localhost:5174', 'https://calvaz-prime.onrender.com'],
             credentials: true,
             optionsSuccessStatus: 204,
         })
